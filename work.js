@@ -20,6 +20,7 @@ function show()
 	
 	if(showMiutes == miutes  && !isShowDone)
 	{
+			win.enterFullscreen();
 			win.show();
 			isShowDone=true;			
 	}
@@ -62,6 +63,7 @@ tray.on('click',
 					console.log("show");
                     win.show();
 					win.setAlwaysOnTop(true);
+					win.enterFullscreen();
                     isShowWindow = true;
                 }
             }
